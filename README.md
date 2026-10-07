@@ -1,18 +1,19 @@
-# Nitish Mishra — Professional Portfolio
+# Nitish Mishra — Website Master
 
-A dependency-free, responsive static portfolio website designed for GitHub Pages or any static hosting provider.
+Premium, restrained one-page professional website for Nitish Mishra, Senior Tender & Bid Management Professional.
 
-## Files
-- `index.html` — website content
-- `styles.css` — responsive visual design
-- `script.js` — mobile navigation only
-- `assets/` — selected professional photographs, certification visuals, tender graphic and resume files
+## Core positioning
+Strategic tender and bid management for GeM, Government, PSU and institutional e-procurement.
 
-## Publish free with GitHub Pages
-1. Create a GitHub account if needed.
-2. Create a **public** repository named `yourusername.github.io`.
-3. Upload the contents of this folder to the repository root.
-4. Open repository **Settings → Pages** and publish from the `main` branch/root.
-5. Your free site will be available at `https://yourusername.github.io/`.
+## Important
+- Formspree endpoint is already connected: `https://formspree.io/f/mljgdepe`
+- Keep the existing Formspree endpoint unchanged unless intentionally replacing the form.
+- The site uses no paid backend or JavaScript dependency.
+- `assets/procurement-office-hero.png` is the selected office-sitting hero visual.
+- The original personal-brand banner assets are retained in `assets/` for reference/reuse.
 
-No paid theme, plugin, analytics service, database or backend is required.
+## Main conversion
+`Audit My Bid` → focused bid review enquiry.
+
+## Publishing
+Upload the complete folder contents to the existing GitHub Pages repository, preserving the `assets/` folder structure.
