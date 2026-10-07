@@ -245,8 +245,8 @@ footer{background:#050d18;color:#8e9caf;border-top:1px solid rgba(255,255,255,.0
 .hero-master-media img{object-fit:cover;object-position:center center}
 .hero-master-shade{position:absolute;inset:0;background:linear-gradient(90deg,rgba(4,12,22,.88) 0%,rgba(4,12,22,.70) 29%,rgba(4,12,22,.24) 56%,rgba(4,12,22,.03) 82%),linear-gradient(0deg,rgba(4,12,22,.50),transparent 42%)}
 .hero-master-content{position:relative;z-index:2;display:flex;align-items:center;padding-top:74px;padding-bottom:72px}
-.hero-copy-master{width:min(660px,62vw)}
-.hero-copy-master h1{font-size:clamp(46px,5.2vw,76px);line-height:1.01;text-shadow:0 3px 25px rgba(0,0,0,.22)}
+.hero-copy-master{width:min(560px,52vw);transform:translateY(-6px)}
+.hero-copy-master h1{font-size:clamp(46px,5.2vw,76px);line-height:1.01;max-width:550px;text-shadow:0 3px 25px rgba(0,0,0,.22)}
 .hero-copy-master .hero-lead{font-size:16px;max-width:650px}
 .hero-principle{max-width:610px;margin:17px 0 0;color:#e1c985;font-size:12px;line-height:1.65;font-weight:700;letter-spacing:.01em}
 .hero-copy-master .hero-actions{margin-top:27px}
@@ -287,7 +287,7 @@ footer{background:#050d18;color:#8e9caf;border-top:1px solid rgba(255,255,255,.0
 @media(max-width:1000px){
   .hero-master{min-height:680px}
   .hero-master-content{padding-top:65px;padding-bottom:58px}
-  .hero-copy-master{width:min(680px,72vw)}
+  .hero-copy-master{width:min(570px,68vw)}
   .hero-master-shade{background:linear-gradient(90deg,rgba(4,12,22,.90) 0%,rgba(4,12,22,.68) 39%,rgba(4,12,22,.20) 72%,rgba(4,12,22,.04) 100%),linear-gradient(0deg,rgba(4,12,22,.52),transparent 45%)}
 }
 
@@ -297,7 +297,7 @@ footer{background:#050d18;color:#8e9caf;border-top:1px solid rgba(255,255,255,.0
   .hero-master-media img{height:auto;width:100%;object-fit:contain}
   .hero-master-shade{inset:auto 0 0;height:52%;background:linear-gradient(0deg,rgba(4,12,22,.78),rgba(4,12,22,0))}
   .hero-master-content{padding:0 14px 44px;background:linear-gradient(180deg,#07111f 0%,#09182a 100%);display:block}
-  .hero-copy-master{width:100%;padding-top:34px}
+  .hero-copy-master{width:100%;padding-top:34px;transform:none}
   .hero-copy-master h1{font-size:43px;line-height:1.02;margin-top:17px}
   .hero-copy-master .hero-lead{font-size:14px;line-height:1.7}
   .hero-principle{font-size:11.5px}
