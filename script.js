@@ -62,3 +62,36 @@ document.querySelectorAll('form[data-form-type]').forEach(form => {
     handleForm(form);
   });
 });
+
+// Certificate full-size viewer. The image also has a normal link fallback if JS is unavailable.
+const certLightbox = document.getElementById('certLightbox');
+const certLightboxImage = document.getElementById('certLightboxImage');
+const certLightboxClose = document.querySelector('.cert-lightbox-close');
+
+function closeCertLightbox() {
+  if (!certLightbox) return;
+  certLightbox.classList.remove('open');
+  certLightbox.setAttribute('aria-hidden', 'true');
+  if (certLightboxImage) certLightboxImage.src = '';
+  document.body.style.overflow = '';
+}
+
+document.querySelectorAll('.cert-lightbox-trigger').forEach(link => {
+  link.addEventListener('click', event => {
+    if (!certLightbox || !certLightboxImage) return;
+    event.preventDefault();
+    certLightboxImage.src = link.getAttribute('href');
+    certLightboxImage.alt = link.querySelector('img')?.alt || 'Certificate full size preview';
+    certLightbox.classList.add('open');
+    certLightbox.setAttribute('aria-hidden', 'false');
+    document.body.style.overflow = 'hidden';
+  });
+});
+
+if (certLightboxClose) certLightboxClose.addEventListener('click', closeCertLightbox);
+if (certLightbox) certLightbox.addEventListener('click', event => {
+  if (event.target === certLightbox) closeCertLightbox();
+});
+document.addEventListener('keydown', event => {
+  if (event.key === 'Escape') closeCertLightbox();
+});
