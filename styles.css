@@ -336,3 +336,6 @@ footer{background:#050d18;color:#8e9caf;border-top:1px solid rgba(255,255,255,.0
   .hero-master-media img{object-fit:contain !important;object-position:center center !important;}
   .hero-master-shade{display:none !important;background:none !important;}
 }
+
+/* HERO V6: use the same full master image on mobile; never use the cropped mobile source */
+@media(max-width:720px){.hero-master-media picture{display:block;width:100%;height:auto}.hero-master-media picture img{display:block;width:100%;height:auto;max-width:100%;object-fit:contain}}
