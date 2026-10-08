@@ -10,6 +10,53 @@
 <title>Nitish Mishra | Senior Tender & Bid Management Professional</title>
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='22' fill='%2307111f'/%3E%3Ctext x='50' y='66' text-anchor='middle' font-family='Arial' font-size='48' font-weight='700' fill='%23d7ae58'%3ENM%3C/text%3E%3C/svg%3E">
 <link rel="stylesheet" href="styles.css">
+
+<style id="final-hero-portfolio-responsive-fixes">
+/* Final hero + portfolio responsive pass — 8 Oct 2026 */
+.hero-master{position:relative;min-height:min(820px,calc(100vh - 70px));overflow:hidden;background:#07111f}
+.hero-master-media{position:absolute!important;inset:0!important;width:100%!important;height:100%!important;z-index:0!important}
+.hero-master-media picture{display:block;width:100%;height:100%}
+.hero-master-media img{display:block;width:100%;height:100%;object-fit:cover;object-position:center center}
+.hero-master-shade{position:absolute!important;inset:0!important;z-index:1!important;background:linear-gradient(90deg,rgba(4,10,18,.88) 0%,rgba(4,10,18,.70) 28%,rgba(4,10,18,.34) 48%,rgba(4,10,18,.08) 68%,rgba(4,10,18,0) 82%)!important;pointer-events:none}
+.hero-master-content{position:relative!important;z-index:2!important;min-height:min(820px,calc(100vh - 70px));display:flex!important;align-items:center!important}
+.hero-copy-master{width:min(520px,46vw)!important;max-width:520px!important;margin:0!important;padding:0!important;transform:translateY(-8px)}
+.hero-copy-master h1{max-width:520px!important;margin-bottom:20px!important;line-height:1.02!important}
+.hero-copy-master h1 em{display:inline-block;max-width:520px}
+.hero-copy-master .hero-lead{max-width:500px!important}
+.hero-copy-master .hero-principle{max-width:500px!important}
+
+@media (max-width:720px){
+  /* Mobile uses a clean stacked hero: image first, copy below. This completely prevents text from covering the face. */
+  .hero-master{min-height:0!important;height:auto!important;overflow:visible!important;display:block!important}
+  .hero-master-media{position:relative!important;inset:auto!important;height:330px!important;min-height:330px!important}
+  .hero-master-media picture{height:100%!important}
+  .hero-master-media img{height:100%!important;width:100%!important;object-fit:cover!important;object-position:58% center!important}
+  .hero-master-shade{background:linear-gradient(180deg,rgba(4,10,18,.02) 0%,rgba(4,10,18,.10) 65%,rgba(4,10,18,.42) 100%)!important}
+  .hero-master-content{min-height:0!important;height:auto!important;display:block!important;background:#07111f;padding:28px 20px 26px!important}
+  .hero-copy-master{width:100%!important;max-width:none!important;margin:0!important;transform:none!important;padding:0!important}
+  .hero-copy-master h1{max-width:none!important;font-size:clamp(34px,9.2vw,46px)!important;line-height:1.02!important;margin:0 0 17px!important}
+  .hero-copy-master h1 em{max-width:none!important}
+  .hero-copy-master .hero-lead{max-width:none!important;font-size:16px!important;line-height:1.55!important}
+  .hero-copy-master .hero-principle{max-width:none!important;font-size:14px!important;line-height:1.5!important}
+  .hero-copy-master .hero-actions{display:flex!important;flex-wrap:wrap!important;gap:10px!important;margin-top:18px!important}
+  .hero-copy-master .hero-actions .btn{flex:0 0 auto!important}
+  .hero-copy-master .cred-strip{margin-top:22px!important}
+
+  /* Portfolio: show the complete portrait instead of using a cover crop. */
+  .portfolio-grid{grid-template-columns:1fr!important}
+  .portfolio-image{width:100%!important;height:auto!important;min-height:0!important;max-height:none!important;aspect-ratio:auto!important;overflow:visible!important;border-radius:inherit}
+  .portfolio-image img{display:block!important;width:100%!important;height:auto!important;max-height:none!important;object-fit:contain!important;object-position:center center!important}
+  .portfolio-copy{width:100%!important}
+}
+
+@media (max-width:420px){
+  .hero-master-media{height:300px!important;min-height:300px!important}
+  .hero-master-content{padding-left:18px!important;padding-right:18px!important}
+  .hero-copy-master h1{font-size:34px!important}
+  .hero-copy-master .cred-strip{grid-template-columns:repeat(2,minmax(0,1fr))!important}
+}
+</style>
+
 </head>
 <body>
 <header class="nav-wrap">
@@ -33,7 +80,7 @@
 <section class="hero hero-master">
   <div class="hero-master-media">
     <picture>
-      <source media="(max-width: 720px)" srcset="assets/procurement-office-hero-mobile.webp">
+      <source media="(max-width: 720px)" srcset="assets/procurement-office-hero-4k.webp">
       <img src="assets/procurement-office-hero-4k.webp" alt="Nitish Mishra working in a professional procurement office with the Indian flag, GeM strategy map, tender documents and laptop">
     </picture>
     <div class="hero-master-shade"></div>
