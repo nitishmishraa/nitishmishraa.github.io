@@ -320,3 +320,19 @@ footer{background:#050d18;color:#8e9caf;border-top:1px solid rgba(255,255,255,.0
   .cert-lightbox img{max-width:96vw;max-height:82vh}
   .cert-lightbox-close{right:12px;top:10px}
 }
+
+
+/* HERO FINAL MOBILE FIX v5 */
+@media (min-width:721px){
+  .hero-master{min-height:0 !important;height:auto !important;aspect-ratio:1536 / 869 !important;}
+  .hero-master-media{position:absolute !important;inset:0 !important;}
+  .hero-master-media img{width:100% !important;height:100% !important;object-fit:cover !important;object-position:center center !important;}
+  .hero-master-shade{background:linear-gradient(90deg,rgba(4,12,22,.88) 0%,rgba(4,12,22,.70) 29%,rgba(4,12,22,.24) 56%,rgba(4,12,22,.03) 82%) !important;}
+}
+@media (max-width:720px){
+  .hero-master{min-height:0 !important;height:auto !important;aspect-ratio:auto !important;display:block !important;}
+  .hero-master-media{position:relative !important;height:auto !important;}
+  .hero-master-media picture,.hero-master-media img{width:100% !important;height:auto !important;display:block !important;}
+  .hero-master-media img{object-fit:contain !important;object-position:center center !important;}
+  .hero-master-shade{display:none !important;background:none !important;}
+}
